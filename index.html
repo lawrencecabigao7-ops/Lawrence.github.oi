@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Students: The Ultimate Learning Hub</title>
+    <!-- Font Awesome Link for Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            max-width: 850px;
+            width: 100%;
+        }
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+            font-size: 2.8rem;
+        }
+        .intro-text {
+            color: #94a3b8;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .icon-card {
+            background: #334155;
+            padding: 25px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s, border-color 0.2s;
+            border: 1px solid #475569;
+        }
+        .icon-card:hover {
+            transform: translateY(-5px);
+            background: #475569;
+            border-color: #38bdf8;
+        }
+        .icon-card i {
+            font-size: 2.5rem;
+            color: #38bdf8;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        .icon-card h3 {
+            margin: 5px 0 10px 0;
+            font-size: 1.3rem;
+            color: #f8fafc;
+        }
+        .icon-card p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .info-footer {
+            background: #0f172a;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #38bdf8;
+        }
+        .info-footer h4 {
+            margin: 0 0 10px 0;
+            color: #38bdf8;
+        }
+        .info-footer p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Expanded Header Area with Descriptive Sentences -->
+        <div class="header-section">
+            <h1>AI for Students</h1>
+            <p class="intro-text">
+                Welcome to the ultimate digital laboratory designed to supercharge your academic journey. 
+                Artificial Intelligence is changing the way we learn, research, and create. 
+                By incorporating these tools into your daily workflow, you can automate repetitive tasks, 
+                break through creative blocks, and gain deep understandings of complex subjects faster than ever before.
+            </p>
+            <p class="intro-text">
+                Click on any of the core categories below to explore how intelligent algorithms can assist you in mastering your curriculum, managing your tight schedule, and elevating your academic performance.
+            </p>
+        </div>
+        
+        <!-- Expanded Grid Cards (All 6 Icons Combined) -->
+        <div class="icon-grid">
+            <!-- Icon 1: Essay Helper -->
+            <div class="icon-card" onclick="openTool('Essay Helper', 'This tool acts as an always-available writing coach to help you structure thoughts and break through writers block.')">
+                <i class="fa-solid fa-pen-nib"></i>
+                <h3>Essay Helper</h3>
+                <p>Overcome writer's block by using advanced AI models to brainstorm unique essay topics, organize unstructured arguments into cohesive outlines, and refine your grammar with real-time stylistic enhancements.</p>
+            </div>
+
+            <!-- Icon 2: AI Research -->
+            <div class="icon-card" onclick="openTool('AI Research', 'Use semantic web search and linguistic modeling to synthesize papers and manage heavy reading loads.')">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>AI Research</h3>
+                <p>Accelerate your literary reviews and homework discovery. This module extracts core arguments from lengthy academic publications, highlights central data points, and formats perfect bibliography citations instantly.</p>
+            </div>
+
+            <!-- Icon 3: Problem Solver -->
+            <div class="icon-card" onclick="openTool('Problem Solver', 'Get clear, formulaic breakdowns for mathematical equations and programming bugs instead of just flat answers.')">
+                <i class="fa-solid fa-calculator"></i>
+                <h3>Problem Solver</h3>
+                <p>Tackle challenging STEM assignments with confidence. Get immediate, multi-step explanations for intricate calculus problems or run interactive debugging routines to fix issues in your computer science projects.</p>
+            </div>
+
+            <!-- Icon 4: Study Planner -->
+            <div class="icon-card" onclick="openTool('Study Planner', 'Generate custom active-recall systems tailored specifically around your syllabus guidelines.')">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Study Planner</h3>
+                <p>Convert raw classroom lecture slides, messy audio recordings, or textbook chapters directly into structured active-recall study guides, comprehensive flashcard decks, and prioritized exam preparation schedules.</p>
+            </div>
+
+            <!-- Icon 5: Language & Translation -->
+            <div class="icon-card" onclick="openTool('Language Practice', 'Immerse yourself in conversational training models to build fluent syntax processing.')">
+                <i class="fa-solid fa-language"></i>
+                <h3>Language Coach</h3>
+                <p>Master new global vocabulary or check deep translation nuances. This engine analyzes complex multi-lingual phrasing, flags conversational bugs, and simulates native interactive dialogue for foreign language courses.</p>
+            </div>
+
+            <!-- Icon 6: Creative Studio -->
+            <div class="icon-card" onclick="openTool('Creative Studio', 'Deploy neural generators to draft structural project elements, visual flowcharts, or rapid asset mockups.')">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h3>Creative Assistant</h3>
+                <p>Transform text prompts into dynamic visuals, slide layouts, or structured scripts. Ideal for designing beautiful presentations, prototyping code interfaces, or brainstorming unique marketing pitches.</p>
+            </div>
+        </div>
+
+        <!-- Explanatory Bottom Section -->
+        <div class="info-footer">
+            <h4>💡 Ethical AI Notice</h4>
+            <p>
+                Remember that artificial intelligence is meant to supplement your intellectual curiosity, not replace it. Use these systems to clarify difficult concepts, verify data references, and test your own understanding through simulation. Always verify crucial data points and ensure your final work accurately reflects your original voice and critical thoughts.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function openTool(toolName, description) {
+            alert("🚀 " + toolName + "\n\n" + description + "\n\nTip: You can wire this card to point to an external URL or open a specific page modal inside your website builder!");
+        }
+    </script>
+
+</body>
+</html>
+
